@@ -103,7 +103,7 @@ def sor(A, b):
             for k in range (0,n):
                 K[i][j] += invQ[i][k]*(Q[k][j] - A[k][j])
     
-    #compute matrix s2, where s1 = invQ * b
+    #compute matrix s1, where s1 = invQ * b
     for i in range (0,n):
         for j in range (0,n):
             s1[i] += invQ[i][j]*b[j]
