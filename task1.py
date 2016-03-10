@@ -83,7 +83,7 @@ def sor(A, b):
     #compute the spectral radius of matrix T, named pT, where pT = max(all eigenvalues)
     pT = max(abs(np.linalg.eigvals(T)))
     
-    #compute optimual omega for SOR method
+    #compute optimal omega for SOR method
     omega = 2*(1 - np.sqrt(1 - ((pT)**2)))/((pT)**2)
     
     iteration = 0
